@@ -1,15 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import Header from '../components/Header';
+import Header from "../components/Header";
 
-import './styles.css';
+import "./styles.css";
+import Wrapper from "../components/Wrapper";
 
 function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
+        <Wrapper>
+          <Header />
+          {children}
+        </Wrapper>
         <footer>
           <img src="/ie-badge.gif" width={100} />
           <span>Thanks for visiting!</span>
