@@ -3,16 +3,16 @@ import React from "react";
 import Header from "../components/Header";
 
 import "./styles.css";
-import Wrapper from "../components/Wrapper";
+import SoundEnabledProvider from "../components/SoundEnabledProvider";
 
 function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Wrapper>
+        <SoundEnabledProvider>
           <Header />
           {children}
-        </Wrapper>
+        </SoundEnabledProvider>
         <footer>
           <img src="/ie-badge.gif" width={100} />
           <span>Thanks for visiting!</span>
